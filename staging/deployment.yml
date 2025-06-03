@@ -15,7 +15,7 @@ spec:
         app.kubernetes.io/name: node-app
     spec:
       containers:
-      - image: docker.io/gauravpachahara/nodeapp:latest
+      - image: docker.io/gauravpachahara/nodeapp:$IMAGE_TAG
         name: nodeapp
         ports:
             - containerPort: 8080
